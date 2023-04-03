@@ -1,0 +1,333 @@
+
+/* Homepage section*/
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-items: center;
+	padding: 20px 50px;
+}
+
+.logo {
+	flex-grow: 1;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	margin: 0 10px;
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	text-decoration: underline;
+}
+
+.main {
+    display: flex;
+}
+
+.main section{
+    flex: 4;
+}
+
+.main aside{
+    flex: 1;
+}
+
+.featured-post {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	margin: 20px 0;
+	padding: 20px;
+	text-align: center;
+}
+
+.featured-post img {
+	max-width: 100%;
+    height: 500px;
+}
+
+.featured-post h2 {
+	margin-top: 0;
+}
+
+.featured-post p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.featured-post a {
+	background-color: #333;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.featured-post a:hover {
+	background-color: #666;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+
+/* blog section */
+
+@media (max-width: 768px) {
+    .blog-posts {
+        display: block;
+    }
+  }
+@media (min-width: 1281px) {
+    .blog-posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.blog-posts article {
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	flex-basis: calc(20% - 20px);
+	margin: 20px;
+	padding: 20px;
+}
+
+.blog-posts img {
+	max-width: 100%;
+}
+
+.blog-posts h2 {
+	margin-top: 0;
+}
+
+.blog-posts p {
+	font-size: 18px;
+	line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.blog-posts a {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.blog-posts a:hover {
+    background-color: #666;
+}
+
+.sidebar {
+    padding: 20px 0;
+}
+
+.sidebar form {
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sidebar input[type="text"] {
+    padding: 5px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+.categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 5px;
+}
+
+.categories a {
+    color: #635f5f;
+    text-decoration: none;
+}
+
+.categories a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* single post section */
+
+.single-post {
+	margin-top: 20px;
+}
+
+.post-title {
+	margin-top: 40px;
+	font-size: 36px;
+}
+
+.post-meta {
+	margin-top: 20px;
+	color: #999;
+	font-size: 14px;
+}
+
+.post-meta span {
+	margin-right: 20px;
+}
+
+.post-content {
+	margin-top: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.container img {
+	max-width: 100%;
+	height: 500px;
+    display: block;
+	margin: 20px auto;
+}
+
+.social-share {
+	margin-top: 40px;
+}
+
+.social-share h3 {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.social-share ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-share li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.social-share li:last-child {
+	margin-right: 0;
+}
+
+.social-share a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #b9b9b9;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.social-share a:hover {
+	background-color: #000;
+}
+
+
+
+
+
+
+/* contact page */
+
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
+@media (min-width: 1281px) {
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6ffe6;
+    border-radius: 5px;
+  }
+  
