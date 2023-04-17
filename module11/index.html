@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+    <h1>Multiplication Table</h1>
+
+    <button onclick="myFunction()">Create</button>
+
+    <p id="table"></p>
+
+    <script>
+
+        function myFunction() {
+            let number = prompt("Enter a Number", "3");
+            if (number != null) {
+                multiplicationTable(number);
+            }
+        }
+
+        function multiplicationTable(num) {
+            for (let i = 1; i <= 10; i++) {
+            const product = num * i;
+            document.getElementById("table").innerHTML += `${num} x ${i} = ${product}<br>`;
+            }
+            document.getElementById("table").innerHTML += "<br><br>";
+        }
+    </script>
+</body>
+</html>
