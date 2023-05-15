@@ -1,1 +1,49 @@
+The purpose of some laravel folders are :-
 
+
+app :- 
+
+    It includes files such as models, controllers, middleware. Also it contains other classes which define the application's business
+    logic and functionality.
+
+bootstrap:
+
+      This folder contains the necessary files to bootstrap the Laravel framework and configure the application. It loads the necessary 
+      dependencies.
+
+config:
+
+      The config folder contains configuration files. It includes files such as app.php for general application configuration, 
+      database.php for database connection configuration , mail.php for email settings, and so on.
+
+database:
+
+    It stores database-related files. Such as migrations, seeds and factories.
+
+public:
+
+     It is the root of a Laravel application. It contains the index.php file, which is the entry point. we can store assets like 
+     images, JavaScript, and CSS files.
+
+resources:
+
+      It handles the view part of MVC. It contains blade template.
+
+routes:
+
+      The routes folder contains the route definitions of our application. Routes define the endpoints and actions that our application 
+      can respond to. commony used file is web.php.
+
+storage:
+
+    The storage stores logs, session files, caches, and uploaded files, compiled views and other temporary files.
+
+tests:
+
+    Here we can write automated tests for our application. It includes files for unit tests, feature tests, and other test-related 
+    files.
+
+vendor:
+
+     It includes third-party libraries and frameworks that an application relies on. It is managed by comopser. It is package manager 
+     used by Laravel.
