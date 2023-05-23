@@ -1,1 +1,1 @@
-Vendor folder is too lagre to uplode. So i didn't upload it. I dont know how to upload it.
+Vendor folder is too lagre to uplode. I don't know how to upload it.  So i didn't upload it.
