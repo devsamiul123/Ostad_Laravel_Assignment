@@ -33,7 +33,21 @@ class MyController extends Controller
         
         $file = $request->file('avatar');
         $file->move('uploads', $file->getClientOriginalName());
-        
+
         return true;
+    }
+
+    function getCookie(Request $request):String{
+        
+        $remember_token = $request->cookie('remember_token');
+
+        return $remember_token;
+    }
+
+    function myFunction4(Request $request):JsonResponse{
+        
+        $email = $request->email;
+        $content = array("success"=> true, "message"=> "Form submitted successfully.");
+        return response()->json($content);
     }
 }
