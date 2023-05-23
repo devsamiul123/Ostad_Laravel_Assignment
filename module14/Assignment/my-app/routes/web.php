@@ -28,3 +28,7 @@ Route::post('/json_response', [MyController::class, 'myFunction3']);
 
 Route::post('/avatar', [MyController::class, 'uploadFile']);
 
+Route::post('/cookie', [MyController::class, 'getCookie']);
+
+Route::post('/submit/{email}', [MyController::class, 'myFunction4']);
+
