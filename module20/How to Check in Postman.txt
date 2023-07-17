@@ -1,0 +1,32 @@
+/////////////////////////////////////////////////////////
+REGISTER - POST route
+
+url = http://127.0.0.1:8000/api/register
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "secret123"
+}
+
+///////////////////////////////////////////////////////
+LOGIN - POST route
+
+url = http://127.0.0.1:8000/api/login
+
+{
+    "email": "john@example.com",
+    "password": "secret123"
+}
+
+////////////////////////////////////////////////////
+LOGOUT - POST route
+
+url = http://127.0.0.1:8000/api/logout
+
+header
+
+key = "Authorization"
+value = "Bearer {JWT_TOKEN}"
+
+//the token will be returned while logging in
