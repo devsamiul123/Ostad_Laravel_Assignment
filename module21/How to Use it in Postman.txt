@@ -1,0 +1,88 @@
+// registration
+
+POST - http://127.0.0.1:8000/register
+
+// Body -> Raw -> Json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "secretpassword"
+}
+
+///////////////////////////////////////////////////////////////
+// Login
+
+POST - http://localhost:8000/login
+
+// Body -> Raw -> Json
+
+{
+    "email": "john.doe@example.com",
+    "password": "secretpassword"
+}
+
+///////////////////////////////////////////////////////////////
+// Create Todo Items
+
+POST - http://localhost:8000/api/todos
+
+// Header -> key: Authorization, Value : Bearer <JWT TOKEN From Login>
+
+// Body -> Raw -> Json
+
+{
+    "title": "Task 1",
+    "description": "Write Code"
+}
+
+// again
+
+{
+    "title": "Task 2",
+    "description": "Test Code"
+}
+
+// again
+
+{
+    "title": "Task 3",
+    "description": "Deploy Code"
+}
+
+
+///////////////////////////////////////////////////////////////
+// Show Todo items
+
+GET - http://localhost:8000/api/todos
+
+// Header -> key: Authorization, Value : Bearer <JWT TOKEN From Login>
+
+
+///////////////////////////////////////////////////////////////
+// Update Todo items
+
+PUT - http://localhost:8000/api/todos/2
+
+// Header -> key: Authorization, Value : Bearer <JWT TOKEN From Login>
+
+// Body -> Raw -> Json
+
+{
+    "title": "Task 2",
+    "description": "Debug Code"
+}
+
+
+///////////////////////////////////////////////////////////////
+// Delete Todo items
+
+DELETE - http://localhost:8000/api/todos/3
+
+// Header -> key: Authorization, Value : Bearer <JWT TOKEN From Login>
+
+
+
+
+
+
